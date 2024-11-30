@@ -3,16 +3,7 @@ A simple 10 Foot interface for media libraries requiring little or no configurat
 
 At present does require the following libraries to be installed locally via pip, eventually it will be packaged with standalone wheels for known good versions:
 
-import pygame # type: ignore
-import subprocess
-import sys
-import os
-import platform
-import threading
-import time
-from psutil import process_iter # type: ignore
-import re
-import json
+pygame, subprocess, sys, os, platform, threading, time, process_iter, re, json
 
 By default it will present a directory/media file simplified file browser in a 10 foot interface. Files and folders will be detected in the directory where the script is launched from and subdirectories. Files will be opened in VLC with "--play-and-exit" and "--fullscreen" enabled. 
 
